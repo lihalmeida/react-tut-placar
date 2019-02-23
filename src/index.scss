@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 body {
   margin: 0;
   padding: 0;
@@ -55,6 +57,11 @@ h4 {
 .partida-container {
   flex-grow: 2;
   flex-basis:0;
+
+  & span {
+    font-size: 14px;
+    padding: 5px;
+  }
 }
 
 .equipa-info {
@@ -62,23 +69,18 @@ h4 {
   border-radius: 8px;
   box-shadow: 1px 1px lightgrey;
   padding-bottom: 20px;
-}
 
-.partida-container span {
-  font-size: 14px;
-  padding: 5px;
-}
+  & button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 5px;
+  }
 
-.equipa-info button {
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  padding: 10px;
-  background-color: lightseagreen;
-  border: none;
-  border-radius: 5px;
-}
-
-.equipa-info button:hover {
-  background-color: rgb(13, 165, 157);
+  & button:hover {
+    background-color: rgb(13, 165, 157);
+  }
 }
